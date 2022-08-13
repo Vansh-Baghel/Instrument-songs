@@ -1,3 +1,3 @@
 # Instrument-Songs-Website🎵🎷
 **Link to the website:** 
-https://adityaj07.github.io/Instrument-songs/
+[Instrumental Songs](https://vansh-baghel.github.io/Instrument-songs/)
