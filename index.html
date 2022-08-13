@@ -1,51 +1,49 @@
 <!DOCTYPE html>
-<head>
-  <title>Instrumental Web Application</title>
-  <style></style>
-</head>
-<body>
-  <h1>Instrumental Songs</h1>
-  <button onclick="togglePlay('dang')">Dandelions</button>
-  <audio id="dang">
-    <source src="./audio/Dandelions Instrumental Bgm.mp3" />
-  </audio>
-
-  <button onclick="togglePlay('Pal')">Pal</button>
-  <audio id="Pal">
-    <source src="./audio/Pal Ek Pal - Instrumental.mp3" />
-  </audio>
-
-  <button onclick="togglePlay('Sukoon')">Sukoon Mila</button>
-  <audio id="Sukoon">
-    <source src="./audio/Sukoon Mila Instrumental.mp3" />
-  </audio>
-
-  <button onclick="togglePlay('Thoda_Thoda-Pyaar')">
-    Thoda Thoda Pyaar Hua
-  </button>
-  <audio id="Thoda_Thoda-Pyaar">
-    <source
-      src="./audio/Thoda Thoda Pyaar Hua ! Instrumental ! Romantic ! Bgm.mp3"
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=DM+Sans&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
     />
-  </audio>
+    <title>Instrumental Web Application</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-inside">
+        <h1>Instrumental Songs</h1>
+        <div class="songs-list">
+          <button onclick="togglePlay('dang')" class="btn">Dandelions</button>
+          <audio id="dang">
+            <source src="./audio/Dandelions Instrumental Bgm.mp3" />
+          </audio>
 
-  <script>
-    let count = 0;
+          <button onclick="togglePlay('Pal')" class="btn">Pal</button>
+          <audio id="Pal">
+            <source src="./audio/Pal Ek Pal - Instrumental.mp3" />
+          </audio>
 
-    function togglePlay(idName) {
-      let audio = document.getElementById(idName);
-      audio.play();
+          <button onclick="togglePlay('Sukoon')" class="btn">
+            Sukoon Mila
+          </button>
+          <audio id="Sukoon">
+            <source src="./audio/Sukoon Mila Instrumental.mp3" />
+          </audio>
 
-      if (count == 0) {
-        /* So if count=0 , make count = 1 and play the song */
-        count = 1;
-        audio.play();
-        /* Now count=1 , if any the button is tapped then as count=1 , it will come in else stmt and again become 0 ,
-        then if clicked again then count = 0 which will keep repeating */
-      } else {
-        count = 0;
-        audio.pause();
-      }
-    }
-  </script>
-</body>
+          <button onclick="togglePlay('Thoda_Thoda-Pyaar')" class="btn">
+            Thoda Thoda Pyaar Hua
+          </button>
+          <audio id="Thoda_Thoda-Pyaar">
+            <source
+              src="./audio/Thoda Thoda Pyaar Hua ! Instrumental ! Romantic ! Bgm.mp3"
+            />
+          </audio>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
