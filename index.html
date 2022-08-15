@@ -9,13 +9,38 @@
       href="https://fonts.googleapis.com/css2?family=Aboreto&family=DM+Sans&family=Poppins&family=Quicksand:wght@300&display=swap"
       rel="stylesheet"
     />
-    <title>Music Player</title>
+    <title>Instrumental Web Application</title>
   </head>
   <body>
     <div class="container">
-      <nav></nav>
-    </div>
+      <div class="container-inside">
+        <h1>Instrumental Songs</h1>
+        <div class="songs-list">
+          <!-- Removed onclick from every button -->
+          <button id="song-1" class="btn">Dandelions</button>
+          <audio id="audio-1">
+            <source src="./audio/Dandelions Instrumental Bgm.mp3" />
+          </audio>
 
+          <button id="song-2" class="btn">Pal</button>
+          <audio id="audio-2">
+            <source src="./audio/Pal Ek Pal - Instrumental.mp3" />
+          </audio>
+
+          <button id="song-3" class="btn">Sukoon Mila</button>
+          <audio id="audio-3">
+            <source src="./audio/Sukoon Mila Instrumental.mp3" />
+          </audio>
+
+          <button id="song-4" class="btn">Thoda Thoda Pyaar Hua</button>
+          <audio id="audio-4">
+            <source
+              src="./audio/Thoda Thoda Pyaar Hua ! Instrumental ! Romantic ! Bgm.mp3"
+            />
+          </audio>
+        </div>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
